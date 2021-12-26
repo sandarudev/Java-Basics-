@@ -129,12 +129,121 @@ public class Main {
         int y = 10;
         System.out.println(add(x,y));
     **/
-
+    /**
         //23 - Overloaded Methods
-        
+        int x = add(3,4);
+        System.out.println(x);
+        double y = add(4.3,2.2);
+        System.out.println(y);
+    **/
+
+    /**
+        //24 - printf
+        // You have place a format specifier in order to print something with the printf statement.
+
+        //System.out.printf("%d This is format specifier",123); // user printf beside println
+
+        //Example with some data types(Look at how to use data type and their respective specifiers)
 
 
-    }
+        boolean myBoolean = true;
+        char myChar = '@';
+        String myString = "Bro";
+        int myInt = 50;
+        double myDouble = 1000;
+
+
+        System.out.printf("%b",myBoolean);
+        System.out.printf("%c",myChar);
+        System.out.printf("%s",myString);
+        System.out.printf("%d",myInt);
+        System.out.printf("%f",myDouble);
+
+
+        //Maintaining width of the output
+        System.out.printf("Hello %10s",myString);
+        //Precision
+        System.out.printf("You have this much of %.1f",myDouble);
+        //Flags
+        // - : left-justify
+        // + : output a plus (+) or minus (-) sign for a numeric value
+        // 0 : numeric values are zero-padded
+        // , : comma grouping separator if numbers > 1000
+
+        System.out.printf("You have this much money %,f",myDouble);
+    **/
+
+    /**
+        //25 - Final keyword - as a practice when developers use final keyword they rename it in uppercase letters
+
+        final double PI = 3.14159;
+        System.out.println(PI);
+    **/
+
+    /**
+
+        //26 - Object (OOP)
+        //Creating object for the class
+        Car myCar1 = new Car();
+        Car myCar2 = new Car();
+
+        //Accessing object attributes by calling created objects
+        System.out.println(myCar1.model);
+        System.out.println(myCar1.make);
+        System.out.println();
+        System.out.println(myCar2.model);
+        System.out.println(myCar2.make);
+
+        //Calling methods of the created class
+        //myCar.drive();
+        //myCar.brake();
+    **/
+
+    /**
+        //27 - Constructors
+        // With the use of constructors we can pass arguments to the same class and same time with creating different objects and calling them we can get different results by that
+
+        //Creating different objects and passing different values in the constructor
+        Human human = new Human("Rick",65,70);
+        Human human2 = new Human("Morty",50,54);
+
+        //System.out.println(human.name);
+        //System.out.println(human2.name);
+
+        human.eat();
+        human2.drink();
+    **/
+
+    /**
+        //28 - Variable Scope
+        // local - declared inside a method and visible only to that method
+        // global - declared outside a method, but within a class visible to all parts of a class
+
+        DiceRoller diceRoller = new DiceRoller();
+    **/
+
+    /**
+        //29 - Overloaded Constructors
+        Pizza pizza = new Pizza("thin crust","tomato","mozzarella","olive");
+
+        System.out.println("Here are the ingredients of your pizza: ");
+        System.out.println(pizza.bread);
+        System.out.println(pizza.sauce);
+        System.out.println(pizza.cheese);
+        System.out.println(pizza.topping);
+    **/
+    /**
+        //30 - toString Method
+        Car car = new Car();
+
+        //This two outputting the same
+        System.out.println(car.toString()); //Inplicitely
+        System.out.println(car); //Explicitely
+    **/
+    
+        //31 - Array of Objects
+
+     }
 
     /**
     static void hello(String x, int y){
@@ -144,6 +253,28 @@ public class Main {
     /**
     static int add(int x, int y){
         return x+y;
+    }
+    **/
+    /**
+    //Methods for overloaded methods
+    static int add(int a, int b){
+        return a+b;
+
+    }
+    static int add(int a, int b, int c){
+        return a+b+c;
+    }
+    static int add(int a, int b, int c, int d){
+        return a+b+c+d;
+    }
+    static double add(double a, double b){
+        return a+b;
+    }
+    static double add(double a, double b, double c){
+        return a+b+c;
+    }
+    static double add(double a, double b, double c, double d){
+        return a+b+c+d;
     }
     **/
 }
