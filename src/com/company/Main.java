@@ -106,14 +106,44 @@ public class Main {
 
         System.out.println(groceryList.get(0).get(1));
     **/
+    /**
+        //21 - for-each loop - traversing technique that use to iterate through the elements in an array/collection with less steps, more readable and more flexible.
 
-        //21 - for-each loop
+        //String[] animals = {"cat","dog","rat"};
+        ArrayList<String> animals = new ArrayList();
 
+        animals.add("cat");
+        animals.add("giraffee");
+        animals.add("rat");
 
+        for (String i : animals){
+            System.out.println(i);
+        }
+    **/
+    /**
+        //22 - Methods
+        //The method is created outside main method of this class file.
+        //hello("Sandaru",24);
 
+        int x =12;
+        int y = 10;
+        System.out.println(add(x,y));
+    **/
 
-
+        //23 - Overloaded Methods
+        
 
 
     }
+
+    /**
+    static void hello(String x, int y){
+        System.out.println("Hi! My name is " + x + " I`m " + y + "years old!");
+    }
+    **/
+    /**
+    static int add(int x, int y){
+        return x+y;
+    }
+    **/
 }
