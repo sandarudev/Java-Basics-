@@ -279,7 +279,25 @@ public class Main {
         garage.park(car1);
         garage.park(car2);
     **/
+    /**
         //33 - Static Keyword
+        // A Single copy of a variable/method is created and shared. The class owns as the static member.
+
+        //Create class objects to pass some friend names to tha class.
+        Friend friend1 = new Friend("Spiderman");
+        Friend friend2 = new Friend("Batman");
+        Friend friend3 = new Friend("Superman");
+
+        //Calling static variable in the friend class
+        //As a good practice its better to call this static variable with using related class names
+        //you can access it by using object name created but it is not a good practice
+        //System.out.println(Friend.numberOfFriends);
+
+        //Calling a static method from friend class
+        Friend.displayFriends();
+    **/
+
+        //34 - Inheritance
         
      }
 
