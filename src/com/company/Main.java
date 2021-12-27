@@ -322,9 +322,18 @@ public class Main {
         Animal animal = new Animal();
         animal.speak();
     **/
-
+    /**
         //36 - Super Keyword
+        // Keyword refers to the superclass (parent) of an object very similar to "this" keyword previously used.
+        // You can pass values within the child class to super class by that keyword and also access its methods and attribute using super keyword
 
+        //Creating hero class object to pass attributes
+        Hero hero1 = new Hero("Batman",42,"$$$");
+        System.out.println(hero1.toString());
+    **/
+
+        //37 - Abstraction
+        
      }
 
     /**
