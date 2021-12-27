@@ -240,11 +240,32 @@ public class Main {
         System.out.println(car.toString()); //Inplicitely
         System.out.println(car); //Explicitely
     **/
-    
+    /**
         //31 - Array of Objects
+        //Creating a array of objects using Food
+        //int[] numbers = new int[3]; - This is a example for a regular array syntax
+        Food[] refrigerator = new Food[3];
 
+        //Crating class objects
+        Food food1 = new Food("Pizza");
+        Food food2 = new Food("Burger");
+        Food food3 = new Food("Sandwich");
+
+        //This is another way of declaring directly values to the array. So we do not need 247,257-260 lines
+        //Food[] refrigerator = {food1, food2, food3};
+
+        //Assigning values for created array
+        refrigerator[0] = food1;
+        refrigerator[1] = food2;
+        refrigerator[2] = food3;
+
+        //Outputting the stored values
+        //Here we are using name property otherwise it will pass the memory location like earlier exercises
+        System.out.println(refrigerator[0].name);
+        System.out.println(refrigerator[1].name);
+        System.out.println(refrigerator[2].name);
      }
-
+    **/
     /**
     static void hello(String x, int y){
         System.out.println("Hi! My name is " + x + " I`m " + y + "years old!");
