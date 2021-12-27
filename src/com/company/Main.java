@@ -308,9 +308,22 @@ public class Main {
         Truck truck = new Truck();
         truck.go();
     **/
-
+    /**
         //35 - Method Overriding
-        
+        // Declaring a method in sub class, which is already present in parent class and give its own implementation
+        // by the child class
+
+        //Creating class objects to dog (in dog class speak() method is overrided)
+        //It is a good practice to add @Override for overrided methods -> Check Dog class
+        Dog dog = new Dog();
+        dog.speak();
+
+        //This is the super class method and it is overrided in Dog class
+        Animal animal = new Animal();
+        animal.speak();
+    **/
+
+        //36 - Super Keyword
 
      }
 
