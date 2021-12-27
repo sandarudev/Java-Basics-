@@ -264,8 +264,25 @@ public class Main {
         System.out.println(refrigerator[0].name);
         System.out.println(refrigerator[1].name);
         System.out.println(refrigerator[2].name);
-     }
     **/
+    /**
+        //32 - Object Passing
+
+        //Creating class objects
+        Garage garage = new Garage();
+
+        //Assigning car models to the object names car1 and car2
+        Car2 car1 = new Car2("BMW");
+        Car2 car2 = new Car2("Tesla");
+
+        //Parking car1 and car2 at the garage class by calling park method in the garage class
+        garage.park(car1);
+        garage.park(car2);
+    **/
+        //33 - Static Keyword
+        
+     }
+
     /**
     static void hello(String x, int y){
         System.out.println("Hi! My name is " + x + " I`m " + y + "years old!");
