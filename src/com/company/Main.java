@@ -331,9 +331,19 @@ public class Main {
         Hero hero1 = new Hero("Batman",42,"$$$");
         System.out.println(hero1.toString());
     **/
+    /**
+        //37 - Abstraction (Vehicle2 and Lorry Classes)
+        // Abstract classes cannot by instantiated, but they can have a subclass. Abstract methods are declared without an implementation.
+        //We cant access it and methods also can define without a body its realted child class can override and give an implementation.
 
-        //37 - Abstraction
-        
+        //Creating class objects, we can only access child class. Abstraction is act as a another security layer
+        Lorry lorry = new Lorry();
+        lorry.go();
+    **/
+
+        //38 - Access Modifiers
+
+
      }
 
     /**
