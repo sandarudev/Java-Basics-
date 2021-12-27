@@ -296,9 +296,22 @@ public class Main {
         //Calling a static method from friend class
         Friend.displayFriends();
     **/
-
+    /**
         //34 - Inheritance
+        //The process of where one class acquires, the attribute and methods of another class using extend keyword
+
+        //Create class objects to access super class attributes and methods
+        Bike bike = new Bike();
+        System.out.println("Bike speed is "+ bike.speed);
+
+        //Accessing vehicle method via truck class object since that truck class inherit properties from its super class vehicle
+        Truck truck = new Truck();
+        truck.go();
+    **/
+
+        //35 - Method Overriding
         
+
      }
 
     /**
