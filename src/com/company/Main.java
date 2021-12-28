@@ -1,5 +1,7 @@
 package com.company;
 
+import package2.C;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -353,9 +355,27 @@ public class Main {
 
         //If we remove public keyword from classes it will only visible within the package
     **/
+    /**
+        //39 - Encapsulation - Attributes of a class will be hidden or private
+        //     can be accessed only through methods (getters& setters)
+        //     you should make attributes private if you don`t have a reason to make them public
+        //void - not returning anything
 
-        //39 - Encapsulation
-        
+        //Create class object for Car3 Class
+        Car3 car = new Car3("Toyota","Prado",2022);
+
+        //Get the make of the car by using getters
+        System.out.println("Previous Make: " + car.getMake() + "\n");
+
+        //Change the make using setters
+        car.setMake("Tesla");
+
+        //Outputting the new make
+        System.out.println("Updated Make: "+ car.getMake());
+    **/
+
+        //40 - Copy Objects
+
      }
 
     /**
