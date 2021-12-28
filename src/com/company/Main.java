@@ -422,8 +422,34 @@ public class Main {
         fish.flee();
         fish.hunt();
     **/
+    /**
+        //42 - Polymorphism - poly - "many" & morph - "form" (Using Aero, A310,A320,A330 classes)
+        //     the ability of an object to identify as more than one type
+        //     It identifies what in common and make thing easier to access and give different types
+        //     like in example aero is sub class and have 3 child classes aero is the common thing
+        //      a310 is identified as a310 and also indetify as aero that is the key point****
 
-        //42 - Polymorphism
+        //Create class objects to access each classes
+        Aero aero = new Aero();
+        A310 a310 = new A310();
+        A320 a320 = new A320();
+        A330 a330 = new A330();
+
+        //Creating a array to hold the class object and make accessible easily otherwise we have line by line have execute
+        //        a310.go();
+        //        a320.go();
+        //        a330.go();
+        Aero[] aeroTypes = {a310,a320,a330};
+
+        //In this for loop x is refers to the position of the array. Aero is the data type and aeroTypes refers to the array
+        for (Aero x : aeroTypes){
+            x.go();
+
+        }
+    **/
+
+        //43 - Dynamic Polymorphism
+        
 
      }
 
