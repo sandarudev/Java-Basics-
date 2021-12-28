@@ -408,8 +408,23 @@ public class Main {
         System.out.println(car2.getModel());
         System.out.println(car2.getYear());
     **/
+    /**
+        //41 - Interface (Rabbit, Hawk, Fish Classes and Prey, Predator Interfaces)
+        // a template tha can be applied to a class. Similar to inheritance, but specifies a class has/must do.
+        // classes can apply more than one interface since inheritance is limited to 1 super class
 
-        //41 - Interface
+        //Create class object for rabbit that implements prey interface
+        Rabbit rabbit = new Rabbit();
+        rabbit.flee();
+
+        //Crete class object for fish class that implements two interfaces
+        Fish fish = new Fish();
+        fish.flee();
+        fish.hunt();
+    **/
+
+        //42 - Polymorphism
+
      }
 
     /**
