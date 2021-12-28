@@ -448,7 +448,7 @@ public class Main {
         }
     **/
     /**
-        //43 - Dynamic Polymorphism (Animal2,Elepahant and Lione classes)
+        //43 - Dynamic Polymorphism (Animal2,Elepahant and Lion classes)
         // poly-morphism = many shapes/forms
         // dynamic = after compilation (during runtime)
         // In dynamic polymorphism let user to decide what type of form that they need to access.
@@ -483,11 +483,36 @@ public class Main {
             animal.color();
         }
     **/
+    /**
 
         //44 - Exception Handling
+        // exception = an event that occurs during the execution of a program that,
+        //             disrupts the normal flow of instructions
 
+        //As a practice finally is used to close all the scanners and files opened and if you can
+        // handle each exception one by one it`s meaningful.
+        Scanner scanner = new Scanner(System.in);
 
+        try{
+            System.out.println("Enter a whole number to devide: ");
+            int x = scanner.nextInt();
 
+            System.out.println("Enter a whole number to devide by: ");
+            int y = scanner.nextInt();
+
+            int z = x/y;
+
+            System.out.println("result: " + z);
+        }
+        catch (Exception e){
+            System.out.println("Somethin went wrong: " + e );
+        }
+        finally {
+            scanner.close();
+        }
+    **/
+
+        //45 - File Class
 
      }
 
