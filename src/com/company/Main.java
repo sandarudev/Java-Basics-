@@ -447,9 +447,47 @@ public class Main {
 
         }
     **/
+    /**
+        //43 - Dynamic Polymorphism (Animal2,Elepahant and Lione classes)
+        // poly-morphism = many shapes/forms
+        // dynamic = after compilation (during runtime)
+        // In dynamic polymorphism let user to decide what type of form that they need to access.
+        // initially it allocate memory for common form and access it according to the users input
 
-        //43 - Dynamic Polymorphism
-        
+        //Create scanner class object to take inputs
+        Scanner scanner = new Scanner(System.in);
+
+        //Create memory allocation and later decide what actually is
+        Animal2 animal;
+
+        //Getting user input
+        System.out.println("What animal do you want to choose? ");
+        System.out.println("Choose (1=Elepant) or (2=Lion): ");
+
+        //Store user input in a integer
+        int choice = scanner.nextInt();
+
+        //Check whether what user eneterd and display accordingly initiating respective constructor for the allocated memory
+        // and use their method
+        if (choice == 1){
+            animal = new Elephant(); //Initiating the constructor to the allocated memory and use methods within that class
+            animal.color();
+        }
+        else if(choice == 2){
+            animal = new Lion();
+            animal.color();
+        }
+        else{
+            System.out.println("You have entered invalid number!!");
+            animal = new Animal2();
+            animal.color();
+        }
+    **/
+
+        //44 - Exception Handling
+
+
+
 
      }
 
