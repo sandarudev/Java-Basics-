@@ -2,8 +2,7 @@ package com.company;
 
 import package2.C;
 
-import java.io.File;
-import java.io.FileWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -546,10 +545,35 @@ public class Main {
             e.printStackTrace();
         }
     **/
-
+    /**
         //47 - FileReader (Read a file)
-        
-     }
+        // FileReader = read the contents of a file as a stream of characters. One by one read() returns an int value
+        //              which contains the byte value when read() returns -1, there is no more data to be read.
+
+        //Create FileReader class object (instant)
+        try {
+            FileReader reader = new FileReader("art.txt");
+
+            //reader data stored to int type of variable that it return data is available or not by a number.
+            // if there is no number available it will return -1 that is the key point
+            int data = reader.read();
+
+            while(data != -1){
+                System.out.print((char)data);
+                data = reader.read();
+            }
+            reader.close();
+
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    **/
+
+        //48 - Audio
+    }
 
     /**
     static void hello(String x, int y){
