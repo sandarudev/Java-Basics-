@@ -5,10 +5,11 @@ import package2.C;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
+import javax.sound.sampled.*;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, UnsupportedAudioFileException, LineUnavailableException {
     /**
         //16 - 2D Array
         Scanner scanner  = new Scanner(System.in);
@@ -571,8 +572,49 @@ public class Main {
             e.printStackTrace();
         }
     **/
-
+    /**
         //48 - Audio
+
+        //Create scanner class object to get user inputs
+        Scanner scanner = new Scanner(System.in);
+
+        File file = new File("charithaS.wav");
+        AudioInputStream audioStream = AudioSystem.getAudioInputStream(file); //passing the audio file to audio input stream
+        Clip clip = AudioSystem.getClip(); //creating clip object to process audio
+        clip.open(audioStream); //opening the audio stream
+
+        String response = "";
+
+        while(!response.equals("Q")){
+            System.out.println("P = Play, S = Stop, R = Reset, Q = Quit");
+            System.out.println("Enter your choice: ");
+
+            response = scanner.next();
+            response = response.toUpperCase();
+
+            switch (response){
+                case ("P"):
+                    clip.start();
+                    break;
+                case ("S"):
+                    clip.stop();
+                    break;
+                case("R"):
+                    clip.setMicrosecondPosition(0);
+                    break;
+                case("Q"):
+                    clip.close();
+                    break;
+                default:
+                    System.out.println("You entered invalid choice!");
+            }
+
+        }
+        System.out.println("Byee!!");
+    **/
+
+        //49 - GUI
+        
     }
 
     /**
