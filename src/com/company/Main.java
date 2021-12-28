@@ -3,6 +3,7 @@ package com.company;
 import package2.C;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -532,10 +533,22 @@ public class Main {
             System.out.println("That file doesn`t exist!");
         }
     **/
-
+    /**
         //46 - File Writer (Write to a file)
-        
 
+        try{
+            FileWriter writer = new FileWriter("myself.txt");
+            writer.write("My name is Sandaru D Silva \nI`m a student @NSBM Green University \nI`m 24 years old! \n");
+            writer.append("- Sandaru D Silva -");
+            writer.close();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    **/
+
+        //47 - FileReader (Read a file)
+        
      }
 
     /**
