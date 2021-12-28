@@ -2,6 +2,7 @@ package com.company;
 
 import package2.C;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -511,8 +512,29 @@ public class Main {
             scanner.close();
         }
     **/
-
+    /**
         //45 - File Class
+        // file = An abstract representation of files and directory pathnames
+
+        //Check whether that file exist in the project or folder location and some file class methods
+        //Create file class object
+        File file = new File("secret_message.txt");
+
+        if (file.exists()){
+            System.out.println("That file exist! ");
+            System.out.println(file.getPath());
+            System.out.println(file.getAbsolutePath());
+            System.out.println(file.isFile());
+            //file.delete();
+
+        }
+        else{
+            System.out.println("That file doesn`t exist!");
+        }
+    **/
+
+        //46 - File Writer (Write to a file)
+        
 
      }
 
