@@ -373,9 +373,43 @@ public class Main {
         //Outputting the new make
         System.out.println("Updated Make: "+ car.getMake());
     **/
+    /**
 
-        //40 - Copy Objects
+        //40 - Copy Objects (Using the same class Car3)
+        // After we create a class object and assign values let`s look at how we are going to add that same values to car2
+        // It shares the same values but have different memory locations
 
+        //Creating 2 class objects they shared 2 memory locations
+        Car3 car1 = new Car3("Toyota","Prius",2000);
+        //Car3 car2 = new Car3("Nissan","GTR",2005);
+
+        //copy the same attributes for the car2 with creating copy method to set values
+        //car2.copy(car1); // --> this method is available in Car3 Class file
+
+        //2nd way is overriding the class constructor and call the created copy method inside it
+        Car3 car2 = new Car3(car1);
+
+        //Output memory location and values of each variable
+        //Memory location
+        System.out.println("Memory Location: ");
+        System.out.println(car1);
+        System.out.println(car2);
+        System.out.println();
+
+        //Values of each class object
+        System.out.println("Car 1 Values: ");
+        System.out.println(car1.getMake());
+        System.out.println(car1.getModel());
+        System.out.println(car1.getYear());
+        System.out.println();
+
+        System.out.println("Car 2 Values: ");
+        System.out.println(car2.getMake());
+        System.out.println(car2.getModel());
+        System.out.println(car2.getYear());
+    **/
+
+        //41 - Interface
      }
 
     /**
