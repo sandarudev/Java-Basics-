@@ -340,10 +340,22 @@ public class Main {
         Lorry lorry = new Lorry();
         lorry.go();
     **/
+    /**
+        //38 - Access Modifiers (Refer package1 and package2 to see the demonstration)
+        //This is another type of security layer
+        //This was demonstrated using different packages that contain different classes
 
-        //38 - Access Modifiers
+        //Down below explain access levels of each access modifier
+        // public                 - Class | Package | Subclass | World
+        // protected              - Class | Package | Subclass | -----
+        // default(no modifier)   - Class | Package | -------- | -----
+        // private                - Class | ------- | -------- | -----
 
+        //If we remove public keyword from classes it will only visible within the package
+    **/
 
+        //39 - Encapsulation
+        
      }
 
     /**
