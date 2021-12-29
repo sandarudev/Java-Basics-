@@ -2,10 +2,12 @@ package com.company;
 
 import package2.C;
 
+import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 import javax.sound.sampled.*;
+import javax.swing.*;
 
 public class Main {
 
@@ -612,9 +614,34 @@ public class Main {
         }
         System.out.println("Byee!!");
     **/
-
+    /**
         //49 - GUI
-        
+        // JFrame = A GUI
+
+        //Basic JFrame controls
+        //This is a one way of making a JFrame. In other way we can create a class that extends from JFrame class and
+        // add these all configurations at that class constructor. Once we create a object of that class it will execute
+
+
+        JFrame frame = new JFrame(); //creates a frame
+        frame.setVisible(true); //make frame visible
+        frame.setTitle("Master Program"); //set the title of the frame
+        frame.setSize(420,420);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exit out of application
+        frame.setResizable(false); //frame cannot be resizable
+
+        //Adding a image icon to the frame
+        ImageIcon image = new ImageIcon("instaLogo.png"); //create an image icon
+        frame.setIconImage(image.getImage()); //change icon of frame
+        frame.getContentPane().setBackground(new Color(75, 25, 32)); //change color of the background
+
+
+        //Create MyFrame class objet to run the frame (2nd method)
+        MyFrame myFrame = new MyFrame();
+    **/
+
+        //50 - Labels
+
     }
 
     /**
